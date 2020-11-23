@@ -1,52 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_radio_group"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/transcation"
+    android:orientation="vertical">
 
 
-
-    <LinearLayout
-        android:orientation="horizontal"
+    <RadioGroup
+        android:layout_centerVertical="true"
+        android:id="@+id/rg"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
 
-        android:layout_height="wrap_content">
-
-        <Button
+        <RadioButton
+            android:background="@color/transcation"
+            android:id="@+id/rb_1"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="主页"
-            android:background="@drawable/mianstybtn"
-            android:textSize="17dp">
-        </Button>
+            android:button="@null"
+            android:drawableTop="@drawable/homepage_btn_bg"
+            android:gravity="center_horizontal"
+            android:drawablePadding="6dp"
+            android:text="首页"
+            android:textColor="@drawable/textcolor_bottom_main"
+            android:textSize="10sp" />
 
-        <Button
+        <RadioButton
+            android:background="@color/transcation"
+            android:id="@+id/rb_2"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="分类"
-            android:background="@drawable/mianstybtn"
-            android:textSize="17dp"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="购物车"
-            android:background="@drawable/mianstybtn"
-            android:textSize="17dp"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="我的"
-            android:background="@drawable/mianstybtn"
-            android:textSize="17dp"/>
+            android:button="@null"
+            android:drawableTop="@drawable/category_btn_bg"
+            android:gravity="center_horizontal"
+            android:drawablePadding="6dp"
+            android:text="发现"
+            android:textColor="@drawable/textcolor_bottom_main"
+            android:textSize="10sp" />
 
 
-    </LinearLayout>
+        <RadioButton
+            android:background="@color/transcation"
+            android:id="@+id/rb_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/shop_btn_bg"
+            android:gravity="center_horizontal"
+            android:drawablePadding="6dp"
+            android:text="消息"
+            android:textColor="@drawable/textcolor_bottom_main"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:background="@color/transcation"
+            android:id="@+id/rb_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/mine_btn_bg"
+            android:gravity="center_horizontal"
+            android:drawablePadding="6dp"
+            android:text="我"
+            android:textColor="@drawable/textcolor_bottom_main"
+            android:textSize="10sp" />
+
+    </RadioGroup>
 
 </LinearLayout>
