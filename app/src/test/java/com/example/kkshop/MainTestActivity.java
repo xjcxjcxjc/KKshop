@@ -1,14 +1,12 @@
 package com.example.kkshop;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.RadioGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.kkshop.Base.BaseActivity;
-import com.example.kkshop.Utils.ViewUtil;
 import com.example.kkshop.View.CategoryFragment;
 import com.example.kkshop.View.HomeFragment;
 import com.example.kkshop.View.MineFragment;
@@ -18,12 +16,18 @@ import com.example.kkshop.View.ViewPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends BaseActivity implements ViewPager.OnPageChangeListener, RadioGroup.OnCheckedChangeListener {
+
+/**
+ * 刚开始是用Viewpage+Fragment配置主页面，但是fragment的背景颜色无法显示在体统栏
+ * 而且用fragment有许多不便，直接就转用activity了
+ *
+ */
+
+public class MainTestActivity extends BaseActivity implements ViewPager.OnPageChangeListener, RadioGroup.OnCheckedChangeListener {
     private HomeFragment homeFragment;
     private CategoryFragment categoryFragment;
     private ShopFragment shopFragment;
     private MineFragment mineFragment;
-    private ViewUtil viewUtil;
 
     RadioGroup rg;
     ViewPager viewPager;
@@ -33,17 +37,13 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_test1_main);
+
         initView();
         initViewPager();
     }
 
     private void initView(){
-
-        viewUtil=ViewUtil.Instance();
-        //设置状态栏上的图标颜色是否为黑色
-        viewUtil.changeStatusBarTextImgColor(true,this);
-
         rg=findViewById(R.id.rg);
         viewPager=findViewById(R.id.viewpager);
     }
@@ -113,4 +113,3 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         }
     }
 }
-

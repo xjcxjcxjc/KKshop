@@ -3,17 +3,14 @@
     android:id="@+id/activity_radio_group"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/MainBackgroud"
-    android:fitsSystemWindows="true"
+    android:background="@color/transcation"
     android:orientation="vertical">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:fitsSystemWindows="true"
         android:layout_height="match_parent"
         android:layout_weight="1"/>
-
 
     <RadioGroup
         android:layout_centerVertical="true"
@@ -22,7 +19,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingTop="5dp"
-        android:fitsSystemWindows="true"
         android:paddingBottom="5dp">
 
         <RadioButton
