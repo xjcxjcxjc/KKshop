@@ -1,5 +1,6 @@
 package com.example.kkshop;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioGroup;
@@ -36,6 +37,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         setContentView(R.layout.activity_main);
         initView();
         initViewPager();
+
     }
 
     private void initView(){

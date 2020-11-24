@@ -4,12 +4,8 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <TextView
-        android:id="@+id/home_frg_tx"
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:textColor="@color/colorAccent"
-        android:text="Home"/>
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
