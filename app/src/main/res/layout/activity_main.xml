@@ -64,7 +64,7 @@
             android:drawableTop="@drawable/shop_btn_bg"
             android:gravity="center_horizontal"
             android:drawablePadding="6dp"
-            android:text="消息"
+            android:text="购物车"
             android:textColor="@drawable/textcolor_bottom_main"
             android:textSize="10sp" />
 

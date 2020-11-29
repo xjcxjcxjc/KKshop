@@ -1,20 +1,18 @@
-package com.example.kkshop;
+package com.example.kkshop.View;
 
-import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.RadioGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.kkshop.Base.BaseActivity;
+import com.example.kkshop.R;
 import com.example.kkshop.Utils.ViewUtil;
-import com.example.kkshop.View.CategoryFragment;
-import com.example.kkshop.View.HomeFragment;
-import com.example.kkshop.View.MineFragment;
-import com.example.kkshop.View.ShopFragment;
-import com.example.kkshop.View.ViewPagerAdapter;
+import com.example.kkshop.View.Category.CategoryFragment;
+import com.example.kkshop.View.Home.HomeFragment;
+import com.example.kkshop.View.Mine.MineFragment;
+import com.example.kkshop.View.ShopCar.ShopFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +35,6 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         setContentView(R.layout.activity_main);
         initView();
         initViewPager();
-
     }
 
     private void initView(){

@@ -7,10 +7,10 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.kkshop.Base.BaseActivity;
-import com.example.kkshop.View.CategoryFragment;
-import com.example.kkshop.View.HomeFragment;
-import com.example.kkshop.View.MineFragment;
-import com.example.kkshop.View.ShopFragment;
+import com.example.kkshop.View.Category.CategoryFragment;
+import com.example.kkshop.View.Home.HomeFragment;
+import com.example.kkshop.View.Mine.MineFragment;
+import com.example.kkshop.View.ShopCar.ShopFragment;
 import com.example.kkshop.View.ViewPagerAdapter;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.example.kkshop.View;
+package com.example.kkshop.View.ShopCar;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,15 +9,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.kkshop.Base.BaseMainFragment;
 import com.example.kkshop.R;
 
-public class MineFragment extends Fragment {
+public class ShopFragment extends BaseMainFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view =inflater.inflate(R.layout.mine_fag,container,false);
+
+        View view =inflater.inflate(R.layout.shop_fag_item,container,false);
         return view;
     }
+
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {

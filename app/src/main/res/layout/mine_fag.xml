@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FragmentBackgroud"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mine_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/MainBackgroud"
+            app:elevation="0dp"
+        />
+
+<!--    头像一块的布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="80dp"
+        android:background="@color/MainBackgroud">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/imge"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/captainamerican" />
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/minefrg_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tony"
+                android:textColor="#000000"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:id="@+id/minefrg_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2521220414@qq.com"
+                android:textColor="#000000"
+                android:textSize="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    Item的布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/mine_location"
+                android:background="@color/MainBackgroud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="收货地址"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/mine_Myorder"
+                android:background="@color/MainBackgroud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我的订单"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/mine_starShop"
+                android:background="@color/MainBackgroud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="关注店铺"
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

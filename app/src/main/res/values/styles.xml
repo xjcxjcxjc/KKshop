@@ -9,9 +9,12 @@
     </style>
 
     <style name="BaseActivityTheme" parent="AppTheme">
-<!--        这里直接设置了系统栏的颜色，这样就不能随着fragment的变化而变化了，后期再改
-    每一个fragment展示的时候，肯定有另一个fragment被destroy或者create-->
         <item name="android:statusBarColor">@color/MainBackgroud</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item><!-- 无标题 -->
+    </style>
+
+    <style name="MainActivityTheme" parent="BaseActivityTheme">
     </style>
 
 </resources>
