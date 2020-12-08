@@ -4,6 +4,14 @@
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".Base.mApplication"
@@ -14,6 +22,18 @@
         android:supportsRtl="true"
         android:theme="@style/BaseActivityTheme">
         <activity android:name=".View.Mine.LocationActivity"></activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="jO5xGlBoI4nCZ8dzFbsrMgzMrqc4qxFc" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".View.Mine.MyOrderActivity" />
+        <activity android:name=".View.Mine.EditorLocationActivity" />
         <activity android:name=".View.Mine.SettingActivity" />
         <activity android:name=".DeBugActivity" />
         <activity android:name=".View.RegisterActivity" />

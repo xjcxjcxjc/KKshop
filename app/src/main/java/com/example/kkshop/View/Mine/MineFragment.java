@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.kkshop.Base.BaseMainFragment;
-import com.example.kkshop.Controller.UserController;
+import com.example.kkshop.Controller.Controller;
 import com.example.kkshop.Po.User;
 import com.example.kkshop.R;
 import com.example.kkshop.Utils.ToastUtil;
@@ -25,7 +25,7 @@ import com.example.kkshop.Utils.ViewUtil;
 public class MineFragment extends BaseMainFragment implements View.OnClickListener {
 
     private static final String TAG = "MineFragment";
-    private UserController userController;
+    private Controller controller;
 
     //Btn
     private Button location;
@@ -38,7 +38,7 @@ public class MineFragment extends BaseMainFragment implements View.OnClickListen
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view =inflater.inflate(R.layout.mine_fag,container,false);
 
-        userController=UserController.Instance();
+        controller = Controller.Instance();
         //view 的初始化
         InitView(view);
         return view;
@@ -54,7 +54,6 @@ public class MineFragment extends BaseMainFragment implements View.OnClickListen
 
         inflater.inflate(R.menu.mine_toolbar,menu);
     }
-
 
     /**
      * Toolbar标题栏的选择事件
@@ -83,13 +82,17 @@ public class MineFragment extends BaseMainFragment implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.mine_location:
-                ToastUtil.showMsg(getContext(),"location");
+                ViewUtil.ActivityJump(getContext(), LocationActivity.class);
                 break;
-
+            case R.id.mine_Myorder:
+                ViewUtil.ActivityJump(getContext(), MyOrderActivity.class);
+                break;
+            case R.id.mine_starShop:
+                ToastUtil.showMsg(getContext(),"Star");
+                break;
             default:
                 break;
         }
-
     }
 
     //初始化View
@@ -111,7 +114,7 @@ public class MineFragment extends BaseMainFragment implements View.OnClickListen
     }
 
     private void InitContent(View v){
-        User user =userController.getUser();
+        User user = Controller.getUser();
         TextView username=v.findViewById(R.id.minefrg_username);
         TextView useremail=v.findViewById(R.id.minefrg_email);
         username.setText(user.getName());

@@ -30,7 +30,6 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     }
     @Override
     public Fragment getItem(int position) {
-        logUtil.e(TAG,"get item"+position);
         return fragments.get(position);
     }
 

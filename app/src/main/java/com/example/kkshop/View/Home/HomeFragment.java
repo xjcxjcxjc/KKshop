@@ -24,14 +24,17 @@ public class HomeFragment extends BaseMainFragment {
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
         View view =inflater.inflate(R.layout.home_fag_item,container,false);
         return view;
     }
 
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+
     }
+
+
 
 }

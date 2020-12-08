@@ -8,7 +8,7 @@ import org.litepal.LitePalApplication;
 
 public class mApplication extends Application {
 
-    private Context context;
+    private static Context context;
 
     @Override
     public void onCreate() {
@@ -17,8 +17,9 @@ public class mApplication extends Application {
         LitePal.initialize(context);
     }
 
-    public Context getMyContext(){
+    public static Context getMyContext(){
         return context;
     }
+
 
 }

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/tx1"
+        android:hint="收件人"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/tx2"
+        android:hint="电话"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/tx3"
+        android:hint="国家"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/tx4"
+        android:hint="省"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/tx5"
+        android:hint="市"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/tx6"
+        android:hint="区"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/tx7"
+        android:hint="街道"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/tx8"
+        android:hint="详细地址"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/location_isdefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="默认"/>
+
+    <Button
+        android:id="@+id/edit_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取当前地址"/>
+
+    <Button
+        android:id="@+id/edit_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="KKShop" />
+    <version value="17" />
+    <list>
+        <mapping class="com.example.kkshop.Po.User" >
+        </mapping>
+        <mapping class="com.example.kkshop.Po.DeliverLocation" >
+        </mapping>
+        <mapping class="com.example.kkshop.Po.UserOrder" >
+        </mapping>
+    </list>
+</litepal>

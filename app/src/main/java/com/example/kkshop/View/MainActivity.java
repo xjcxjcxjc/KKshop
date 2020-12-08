@@ -39,10 +39,6 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
 
     private void initView(){
 
-        viewUtil=ViewUtil.Instance();
-        //设置状态栏上的图标颜色是否为黑色
-        viewUtil.changeStatusBarTextImgColor(true,this);
-
         rg=findViewById(R.id.rg);
         viewPager=findViewById(R.id.viewpager);
     }

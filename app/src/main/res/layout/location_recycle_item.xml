@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/FragmentBackgroud"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+<!--   左部分非按钮     -->
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/Blcak"
+                android:textSize="20dp"
+                android:id="@+id/location_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项佳诚"/>
+
+            <TextView
+                android:gravity=""
+                android:lineHeight="20dp"
+                android:id="@+id/location_item_phone"
+                android:layout_above="@id/location_item_detailed"
+                android:layout_toRightOf="@+id/location_item_name"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13454223781"/>
+
+
+            <TextView
+                android:textColor="@color/Blcak"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:id="@+id/location_item_detailed"
+                android:layout_below="@+id/location_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浙江省 宁波市 海曙区 高桥镇 学院路 899号宁碧财经学院"/>
+
+            <TextView
+                android:layout_below="@id/location_item_detailed"
+                android:id="@+id/location_item_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Red"
+                android:text=""/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/location_item_Editor"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="编辑"/>
+
+        <Button
+            android:id="@+id/location_item_Delete"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="删除"/>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

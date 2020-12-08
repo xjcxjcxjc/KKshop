@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DeBugActivity">
+    <EditText
+        android:id="@+id/debug_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        />
+    <EditText
+        android:id="@+id/debug_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="phone"
+        />
+    <EditText
+        android:id="@+id/debug_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        />
+    <EditText
+        android:id="@+id/debug_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password"
+        />
+    <EditText
+        android:id="@+id/debug_iccard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ICcard"
+        />
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插入"
+        />
+
+    <Button
+        android:id="@+id/find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查找"
+        />
+
+    <TextView
+        android:id="@+id/show"
+        android:text="nothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

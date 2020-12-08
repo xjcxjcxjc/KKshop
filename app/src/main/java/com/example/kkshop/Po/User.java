@@ -1,6 +1,10 @@
 package com.example.kkshop.Po;
 
+import org.litepal.LitePal;
 import org.litepal.crud.LitePalSupport;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public  class User extends LitePalSupport {
 
@@ -11,15 +15,15 @@ public  class User extends LitePalSupport {
     private String phone;
     private String iccard;
     private String Email;
-//    private List<Order> orders;
 
     public User() {
     }
-    public User(String name, String password, String phone, String iccard, String email) {
+
+    public User(String name, String password, String phone, String Iccard, String email) {
         this.name = name;
         this.password = password;
         this.phone = phone;
-        this.iccard = iccard;
+        this.iccard = Iccard;
         Email = email;
     }
 
